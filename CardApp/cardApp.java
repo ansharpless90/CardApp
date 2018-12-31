@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Cardapp extends JFrame implements ActionListener
+public class cardApp extends JFrame implements ActionListener
     {
      //JButton Variables
      private JButton buttonOne,
@@ -16,14 +16,14 @@ public class Cardapp extends JFrame implements ActionListener
 
      private JTextField TextField = new JTextField(3); //constructs a new JPanel textfield.
 
-     Hand handObject = new Hand(); //constructs new Hand object
+     hand handObject = new hand(); //constructs new Hand object
      
-     private int pressednumber;
+     private int pressedNumber;
 
 
-     public Cardapp()
+     public cardApp()
           {
-           JPanel buttonpanel = new JPanel(new Gridlayout(1, 3)); //Grid layout constructed
+           JPanel buttonPanel = new JPanel(new GridLayout(1, 3)); //Grid layout constructed
 
            //constructors for buttons 1,2, and 3.
            buttonOne = new JButton("1");
@@ -33,7 +33,7 @@ public class Cardapp extends JFrame implements ActionListener
            //Action variables are attributed to buttons.
            buttonOne.addActionListener(this);
            buttonTwo.addActionListener(this);
-           buttonThree.addActionlistener(this);
+           buttonThree.addActionListener(this);
 
            //Places respective buttons 1,2, and 3, onto JPanel Window.
            buttonPanel.add(buttonOne);
@@ -41,9 +41,9 @@ public class Cardapp extends JFrame implements ActionListener
            buttonPanel.add(buttonThree);
 
            //Border layout spevifications for JPanel Window.
-           JPanel mainpanel = new JPanel(new Borderlayout());
+           JPanel mainPanel = new JPanel(new BorderLayout());
            getContentPane().add(mainPanel);
-           mainPanel.add(TextField. BorderLayout.CENTER);
+           mainPanel.add(TextField, BorderLayout.CENTER);
            mainPanel.add(buttonPanel, BorderLayout.SOUTH);
 
            setTitle("CardAPP");
@@ -76,7 +76,7 @@ public class Cardapp extends JFrame implements ActionListener
             handObject.Discard(pressedNumber);
            }
 
-         TextField.setText(handObject.Dispay()); //Puts new text into JPanel.
+         TextField.setText(handObject.Display()); //Puts new text into JPanel.
          handObject.Success(); //Calls success function to determine if winner.
 
        }
@@ -85,7 +85,7 @@ public class Cardapp extends JFrame implements ActionListener
     public static void main(String[] args)
     {
      
-       Cardapp c = new Cardapp();
+       cardApp c = new cardApp();
    
     }
 

@@ -6,7 +6,7 @@ package CardApp;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-public class Hand
+public class hand
   {
    
    String L_Suit; //Left card.
@@ -36,13 +36,13 @@ public class Hand
     int randNum     = randInt.nextInt(5); //gives random number from 0 to 4.
 
     if(pressed == 1)
-      L_Suit = Suits[randSuitNumber]; //random number corresponds with a value in suits.
+      L_Suit = Suits[randSuitNum]; //random number corresponds with a value in suits.
 
     if(pressed == 2)
-      M_Suit = Suits[randSuitNumber]; //random number corresponds with a value in suits.
+      M_Suit = Suits[randSuitNum]; //random number corresponds with a value in suits.
 
     if(pressed == 3)
-      R_Suit = Suits[randSuitNumber]; //random number corresponds with a value in suits.
+      R_Suit = Suits[randSuitNum]; //random number corresponds with a value in suits.
 
     Shuffle = chance[randNum]; //random number corresponds with a value in chance.
 
