@@ -63,7 +63,7 @@ public class Hand
 
    public String Display () //Displays the suits in the JPanel window.
    {
-    displaySuits = (L_Suit + M_Suit + _Suit);
+    displaySuits = (L_Suit + M_Suit + R_Suit);
     return displaySuits;
    }
 

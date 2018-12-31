@@ -23,7 +23,7 @@ public class Cardapp extends JFrame implements ActionListener
 
      public Cardapp()
           {
-           JPanel buttonpanel = new JPanel(new Gridlayout(1, 3) //Grid layout constructed
+           JPanel buttonpanel = new JPanel(new Gridlayout(1, 3)); //Grid layout constructed
 
            //constructors for buttons 1,2, and 3.
            buttonOne = new JButton("1");
